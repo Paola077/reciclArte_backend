@@ -22,7 +22,11 @@ public class ItemService {
     }
 
     public List<Item> getAllItems() {
-        return itemRepository.findAll();
+        List<Item> items = itemRepository.findAll();
+        if (items.isEmpty()) {
+            throw new ItemNotFoundException("No items found.");
+        }
+        return items;
     }
 
     public Optional<Item> getItemById(Long id) {
@@ -36,6 +40,9 @@ public class ItemService {
     }
 
     public void deleteItem(Long id) {
+        if (!itemRepository.existsById(id)) {
+            throw new ItemNotFoundException("The item with id " + id + " does not exist.");
+        }
         itemRepository.deleteById(id);
     }
 
