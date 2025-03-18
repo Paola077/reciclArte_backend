@@ -47,25 +47,25 @@ public class ItemService {
     }
 
     public Item markAsReserved(Long id) {
-        Optional<Item> itemOpt = itemRepository.findById(id);
-        if (itemOpt.isPresent()) {
-            Item item = itemOpt.get();
-            item.setReserved(true);
-            return itemRepository.save(item);
-        }
-        return null;
+        Item item = itemRepository.findById(id)
+                .orElseThrow(() -> new ItemNotFoundException("The item with id " + id + " does not exist."));
+
+        item.setReserved(true);
+        return itemRepository.save(item);
     }
 
     public Item updateItem(Long id, Item updatedItem) {
-        return itemRepository.findById(id).map(item -> {
-            item.setName(updatedItem.getName());
-            item.setDescription(updatedItem.getDescription());
-            item.setCategory(updatedItem.getCategory());
-            item.setItemCondition(updatedItem.getItemCondition());
-            item.setImgUrl(updatedItem.getImgUrl());
-            item.setLocation(updatedItem.getLocation());
-            item.setReserved(updatedItem.isReserved());
-            return itemRepository.save(item);
-        }).orElseThrow(() -> new RuntimeException("Item not found"));
+        Item item = itemRepository.findById(id)
+                .orElseThrow(() -> new ItemNotFoundException("The item with id " + id + " does not exist."));
+
+        item.setName(updatedItem.getName());
+        item.setDescription(updatedItem.getDescription());
+        item.setCategory(updatedItem.getCategory());
+        item.setItemCondition(updatedItem.getItemCondition());
+        item.setImgUrl(updatedItem.getImgUrl());
+        item.setLocation(updatedItem.getLocation());
+        item.setReserved(updatedItem.isReserved());
+
+        return itemRepository.save(item);
     }
 }
