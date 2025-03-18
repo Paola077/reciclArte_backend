@@ -41,5 +41,9 @@ public class ItemController {
     public Item markAsReserved(@PathVariable Long id) {
         return itemService.markAsReserved(id);
     }
+    @PutMapping("/{id}")
+    public Item updateItem(@PathVariable Long id, @RequestBody Item updatedItem) {
+        return itemService.updateItem(id, updatedItem);
+    }
 
 }
