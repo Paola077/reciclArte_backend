@@ -1,6 +1,7 @@
 package com.example.reciclArte_backend.service;
 
 import com.example.reciclArte_backend.entity.Item;
+import com.example.reciclArte_backend.exceptions.ItemNotFoundException;
 import com.example.reciclArte_backend.repository.ItemRepository;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +26,13 @@ public class ItemService {
     }
 
     public Optional<Item> getItemById(Long id) {
-        return itemRepository.findById(id);
+        Optional<Item> optionalItem = itemRepository.findById(id);
+
+        if(optionalItem.isEmpty()) {
+            throw new ItemNotFoundException("The item with id " + id + " does not exist.");
+        }
+
+        return optionalItem;
     }
 
     public void deleteItem(Long id) {
