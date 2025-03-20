@@ -86,7 +86,7 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
 }
 ```
 
-###🔹 UPDATE - Actualizar un artículo
+### 🔹 UPDATE - Actualizar un artículo
 📌 Método: PUT
 📌 Endpoint: /api/items/{id}
 📌 Cuerpo de la solicitud (JSON):
@@ -114,7 +114,7 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
   "reserved": true
 }
 ```
-###🔹 UPDATE - Reservar un artículo
+### 🔹 UPDATE - Reservar un artículo
 📌 Método: PUT
 📌 Endpoint: /api/items/{id}/reserve
 📌 Ejemplo de solicitud:
@@ -130,7 +130,7 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
   "reserved": true
 }
 ```
-###🔹 DELETE - Eliminar un artículo
+### 🔹 DELETE - Eliminar un artículo
 📌 Método: DELETE
 📌 Endpoint: /api/items/{id}
 📌 Respuesta (200 OK) si el artículo se elimina correctamente.
@@ -140,7 +140,7 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
   "error": "The item with id 99 does not exist."
 }
 ```
-###🔗 Información adicional
+### 🔗 Información adicional
 📂 Código fuente: GitHub Repo https://github.com/Paola077/reciclArte_backend
 
 
