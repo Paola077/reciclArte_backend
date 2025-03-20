@@ -142,7 +142,17 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
 ```
 ### 🔗 Información adicional  
 📂 **Código fuente:** [ReciclArte Backend](https://github.com/Paola077/reciclArte_backend)  
-🎨 **Código fuente Frontend:** [ReciclArte Frontend](https://github.com/rebecabernal/ReciclArteFront) 
+🎨 **Código fuente Frontend:** [ReciclArte Frontend](https://github.com/rebecabernal/ReciclArteFront)  
+### 👥 **Equipo de Desarrollo**  
+#### 📂 Backend (BE)  
+- [Paola Perdomo] - `paolaperdomo079@gmail.com`  
+- [Jesús Enjamio Barcena] - `jenjamiob@gmail.com`  
+- [Grigory Vladimiro] - `grigori.vladimiro@gmail.com`  
+
+#### 🎨 Frontend (FE)  
+- [Priscila Guillen] - `pguillen.oliv@gmail.com`  
+- [Ana Castro] - `cuyssi@hotmail.com`  
+- [Rebeca Bernal] - `rebecabernalmesa@gmail.com`
 
 
 
