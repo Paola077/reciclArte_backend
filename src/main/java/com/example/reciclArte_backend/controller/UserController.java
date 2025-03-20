@@ -27,10 +27,10 @@ public class UserController {
             if (registeredUser != null) {
                 return ResponseEntity.ok(registeredUser);
             } else {
-                return ResponseEntity.badRequest().body("No se pudo registrar el usuario.");
+                return ResponseEntity.badRequest().body("The user could not be registered.");
             }
         } catch (Exception e) {
-            return ResponseEntity.status(500).body("Error interno del servidor: " + e.getMessage());
+            return ResponseEntity.status(500).body("Internal Server Error: " + e.getMessage());
         }
     }
 
@@ -41,7 +41,7 @@ public class UserController {
         if (loggedInUser.isPresent()) {
             return ResponseEntity.ok(loggedInUser.get());
         } else {
-            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Credenciales incorrectas");
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Incorrect credentials");
         }
     }
 
@@ -52,7 +52,7 @@ public class UserController {
         if (user.isPresent()) {
             return ResponseEntity.ok(user.get());
         } else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Usuario no encontrado");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User not foung");
         }
     }
 }

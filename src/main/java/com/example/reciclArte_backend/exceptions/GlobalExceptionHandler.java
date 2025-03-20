@@ -25,8 +25,15 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(ItemNotFoundException.class)
     public ResponseEntity<Map<String, String>> handleItemNotFoundException(ItemNotFoundException exception) {
         Map<String, String> errorResponse = new HashMap<>();
-        errorResponse.put("error", exception.getMessage()); // Devuelve el mensaje de error personalizado
+        errorResponse.put("error", exception.getMessage());
         return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(UserExistingException.class)
+    public ResponseEntity<Map<String, String>> handleUserExistingException(UserExistingException exception) {
+        Map<String, String> errorResponse = new HashMap<>();
+        errorResponse.put("error", exception.getMessage());
+        return new ResponseEntity<>(errorResponse, HttpStatus.CONFLICT);
     }
 }
 

@@ -17,7 +17,7 @@ public class UserService {
     public User registerUser(User user) {
         userRepository.findByEmail(user.getEmail())
             .ifPresent(existing -> {
-                throw new RuntimeException("El usuario ya está registrado");
+                throw new RuntimeException("The user is already registered");
             });
         return userRepository.save(user);
     }
