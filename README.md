@@ -14,6 +14,18 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
 - **Maven** (Gestión de dependencias)  
 
 ---
+## 🗄️ **Base de Datos**  
+El proyecto utiliza **MySQL** como base de datos y **PHPMyAdmin** para su gestión.  
+
+📌 **Herramientas:**  
+- **Servidor de base de datos:** MySQL  
+- **Interfaz de administración:** PHPMyAdmin
+- **Entorno de desarrollo local:** XAMPP  
+
+📌 **Configuración de la base de datos:**   
+- La base de datos está configurada en **MySQL** y se gestiona a través de **PHPMyAdmin**.  
+- La base de datos se ejecuta dentro de **XAMPP** y puede ser accesible desde **PHPMyAdmin**  
+---
 
 ## 📡 Endpoints de la API (CRUD)  
 
