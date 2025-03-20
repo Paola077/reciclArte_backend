@@ -1,3 +1,5 @@
+![CI](https://github.com/Paola077/reciclArte_backend/actions/workflows/ci.yml/badge.svg)
+
 # ♻️ ReciclArte - Backend  
 
 ## 📖 Descripción  
