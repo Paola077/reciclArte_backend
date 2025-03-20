@@ -11,7 +11,6 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
 - **Java 21**  
 - **Spring Boot** (Web, Data JPA)  
 - **MySQL** (Base de datos)  
-- **Lombok** (Reducir código repetitivo)  
 - **Maven** (Gestión de dependencias)  
 
 ---
