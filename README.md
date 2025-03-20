@@ -18,9 +18,9 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
 ## 📡 Endpoints de la API (CRUD)  
 
 ### 🔹 **CREATE - Crear un nuevo artículo**  
-📌 Método:** `POST`  
-📌 Endpoint:** `/api/items`  
-📌 Cuerpo de la solicitud (JSON):**  
+📌 **Método:** `POST`  
+📌 **Endpoint:** `/api/items`  
+📌 **Cuerpo de la solicitud (JSON):**  
 ```json
 {
   "name": "Silla de oficina",
@@ -32,7 +32,7 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
   "reserved": false
 }
 ```
-📌 **Respuesta (201 Created):
+📌 **Respuesta (201 Created):**
 ```json
 {
   "id": 2,
@@ -47,9 +47,9 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
 ```
 
 ### 🔹 READ - Obtener todos los artículos
-📌 Método: GET
-📌 Endpoint: /api/items
-📌 Respuesta (200 OK):
+📌 **Método: GET**
+📌 **Endpoint: /api/items**
+📌 **Respuesta (200 OK):**
 ```json
 {
     "id": 1,
