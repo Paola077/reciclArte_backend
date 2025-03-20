@@ -46,7 +46,7 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
 }
 ```
 
-### 🔹 **READ - Obtener todos los artículos
+### 🔹 READ - Obtener todos los artículos
 📌 Método: GET
 📌 Endpoint: /api/items
 📌 Respuesta (200 OK):
@@ -62,7 +62,7 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
     "reserved": false
   }
 ```
-### 🔹 **READ - Obtener un artículo por ID
+### 🔹 READ - Obtener un artículo por ID
 📌 Método: GET
 📌 Endpoint: /api/items/{id}
 📌 Respuesta si el artículo existe (200 OK):
