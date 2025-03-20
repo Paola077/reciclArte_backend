@@ -47,8 +47,8 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
 ```
 
 ### 🔹 READ - Obtener todos los artículos
-📌 **Método: GET**
-📌 **Endpoint: /api/items**
+📌 **Método:** `GET`
+📌 **Endpoint:** `/api/items`
 📌 **Respuesta (200 OK):**
 ```json
 {
