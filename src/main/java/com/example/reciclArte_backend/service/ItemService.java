@@ -39,13 +39,6 @@ public class ItemService {
         return optionalItem;
     }
 
-    public void deleteItem(Long id) {
-        if (!itemRepository.existsById(id)) {
-            throw new ItemNotFoundException("The item with id " + id + " does not exist.");
-        }
-        itemRepository.deleteById(id);
-    }
-
     public Item markAsReserved(Long id) {
         Item item = itemRepository.findById(id)
                 .orElseThrow(() -> new ItemNotFoundException("The item with id " + id + " does not exist."));
@@ -67,5 +60,12 @@ public class ItemService {
         item.setReserved(updatedItem.isReserved());
 
         return itemRepository.save(item);
+    }
+
+    public void deleteItem(Long id) {
+        if (!itemRepository.existsById(id)) {
+            throw new ItemNotFoundException("The item with id " + id + " does not exist.");
+        }
+        itemRepository.deleteById(id);
     }
 }
