@@ -10,7 +10,6 @@ import java.util.Optional;
 @RestController
 @CrossOrigin(origins = "http://localhost:5173")
 @RequestMapping("/api/items")
-@CrossOrigin(origins = "http://localhost:5174")
 public class ItemController {
 
     private final ItemService itemService;
