@@ -145,14 +145,14 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
 🎨 **Código fuente Frontend:** [ReciclArte Frontend](https://github.com/rebecabernal/ReciclArteFront)  
 ### 👥 **Equipo de Desarrollo**  
 #### 📂 Backend (BE)  
-- [Paola Perdomo] - `paolaperdomo079@gmail.com`  
-- [Jesús Enjamio Barcena] - `jenjamiob@gmail.com`  
-- [Grigory Vladimiro] - `grigori.vladimiro@gmail.com`  
+- **Paola Perdomo** - `[paolaperdomo079@gmail.com](mailto:paolaperdomo079@gmail.com)`
+- **Jesús Enjamio Barcena** - `jenjamiob@gmail.com`  
+- **Grigory Vladimiro** - `grigori.vladimiro@gmail.com`  
 
 #### 🎨 Frontend (FE)  
-- [Priscila Guillen] - `pguillen.oliv@gmail.com`  
-- [Ana Castro] - `cuyssi@hotmail.com`  
-- [Rebeca Bernal] - `rebecabernalmesa@gmail.com`
+- **Priscila Guillen** - `pguillen.oliv@gmail.com`  
+- **Ana Castro** - `cuyssi@hotmail.com`  
+- **Rebeca Bernal** - `rebecabernalmesa@gmail.com`
 
 
 
