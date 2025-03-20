@@ -141,7 +141,7 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
 }
 ```
 ### 🔗 Información adicional  
-📂 Código fuente: GitHub Repo https://github.com/Paola077/reciclArte_backend
+📂 **Código fuente:** [ReciclArte Backend](https://github.com/Paola077/reciclArte_backend)
 
 
 
