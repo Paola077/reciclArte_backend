@@ -18,9 +18,9 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
 ## 📡 Endpoints de la API (CRUD)  
 
 ### 🔹 **CREATE - Crear un nuevo artículo**  
-📌 **Método:** `POST`  
-📌 **Endpoint:** `/api/items`  
-📌 **Cuerpo de la solicitud (JSON):**  
+📌 Método:** `POST`  
+📌 Endpoint:** `/api/items`  
+📌 Cuerpo de la solicitud (JSON):**  
 ```json
 {
   "name": "Silla de oficina",
@@ -47,9 +47,9 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
 ```
 
 ### 🔹 READ - Obtener todos los artículos
-📌 **Método: GET
-📌 **Endpoint: /api/items
-📌 **Respuesta (200 OK):
+📌 Método: GET
+📌 Endpoint: /api/items
+📌 Respuesta (200 OK):
 ```json
 {
     "id": 1,
@@ -85,5 +85,68 @@ Este repositorio contiene el **backend** del proyecto, desarrollado con **Spring
   "error": "The item with id 99 does not exist."
 }
 ```
+
+###🔹 UPDATE - Actualizar un artículo
+📌 Método: PUT
+📌 Endpoint: /api/items/{id}
+📌 Cuerpo de la solicitud (JSON):
+```json
+{
+  "name": "Silla ergonómica",
+  "description": "Casi nueva",
+  "category": "Muebles",
+  "itemCondition": "Nuevo",
+  "imgUrl": "https://image.com/silla-nueva.jpg",
+  "location": "Barcelona",
+  "reserved": true
+}
+```
+📌 Respuesta (200 OK):
+```json
+{
+  "id": 2,
+  "name": "Silla ergonómica",
+  "description": "Casi nueva",
+  "category": "Muebles",
+  "itemCondition": "Nuevo",
+  "imgUrl": "https://image.com/silla-nueva.jpg",
+  "location": "Barcelona",
+  "reserved": true
+}
+```
+###🔹 UPDATE - Reservar un artículo
+📌 Método: PUT
+📌 Endpoint: /api/items/{id}/reserve
+📌 Ejemplo de solicitud:
+```json
+{
+  "id": 1,
+  "name": "Bicicleta usada",
+  "description": "En buen estado",
+  "category": "Transporte",
+  "itemCondition": "Usado",
+  "imgUrl": "https://image.com/bike.jpg",
+  "location": "Madrid",
+  "reserved": true
+}
+```
+###🔹 DELETE - Eliminar un artículo
+📌 Método: DELETE
+📌 Endpoint: /api/items/{id}
+📌 Respuesta (200 OK) si el artículo se elimina correctamente.
+📌 Si el ID no existe (404 Not Found):
+```json
+{
+  "error": "The item with id 99 does not exist."
+}
+```
+###🔗 Información adicional
+📂 Código fuente: GitHub Repo https://github.com/Paola077/reciclArte_backend
+
+
+
+
+
+
 
 
